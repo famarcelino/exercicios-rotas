@@ -1,7 +1,19 @@
+import Button from "../../../components/Button";
+import Card from "../../../components/Card";
+
 export default function HomeBody() {
-    return(
+    return (
         <main>
-            <h2>Página inicial</h2>
+            <section>
+                <div className="container">
+                    <div className="mb30 mt30">
+                        <Card title="Página inicial" />
+                    </div>
+                    <div className="dflex">
+                        <Button text="Ver promoção" />
+                    </div>
+                </div>
+            </section>
         </main>
     );
 }
