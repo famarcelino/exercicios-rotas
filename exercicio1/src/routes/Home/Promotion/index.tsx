@@ -1,9 +1,22 @@
-import "./styles.css";
+import { Link } from "react-router-dom";
+import Button from "../../../components/Button";
+import Card from "../../../components/Card";
 
 export default function Promotion() {
-    return(
+    return (
         <main>
-            <h2>Página de promoção</h2>
+            <section>
+                <div className="container">
+                    <div className="mb30 mt30">
+                        <Card title="Página de promoção" />
+                    </div>
+                    <div className="dflex">
+                        <Link to="/subscription">
+                            <Button text="Quero participar" />
+                        </Link>
+                    </div>
+                </div>
+            </section>
         </main>
     );
 }
